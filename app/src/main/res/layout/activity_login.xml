@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center"
+    android:fitsSystemWindows="true" android:padding="24dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/welcome_message" android:textSize="24sp" android:textStyle="bold"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:text="@string/login_titulo" android:textSize="18sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" android:hint="@string/hint_email">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etEmail"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:hint="@string/hint_password"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPass"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp" android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnLogin"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="@string/btn_login"/>
+
+    <TextView android:id="@+id/tvRegistro" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:padding="8dp" android:text="@string/link_registro"
+        android:textColor="?attr/colorPrimary"/>
+</LinearLayout>
