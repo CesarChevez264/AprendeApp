@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        app:title="@string/app_name"/>
+
+    <androidx.appcompat.widget.SearchView android:id="@+id/searchView"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        app:iconifiedByDefault="false" app:queryHint="@string/hint_buscar"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingHorizontal="8dp">
+        <Spinner android:id="@+id/spTipo" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:entries="@array/tipos_filtro"/>
+        <Spinner android:id="@+id/spOrden" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:entries="@array/ordenes"/>
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvRecursos"
+            android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:id="@+id/tvVacio" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center"
+            android:text="@string/sin_resultados" android:visibility="gone"/>
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center"
+            android:visibility="gone"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAgregar" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="bottom|end"
+            android:layout_margin="16dp" android:visibility="gone"
+            android:contentDescription="@string/cd_agregar"
+            app:srcCompat="@android:drawable/ic_input_add"/>
+    </FrameLayout>
+</LinearLayout>
