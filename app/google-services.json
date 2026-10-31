@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "838595346997",
+    "project_id": "aprendeapp-c7900",
+    "storage_bucket": "aprendeapp-c7900.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838595346997:android:ea01bf11ac16fac66ca77c",
+        "android_client_info": {
+          "package_name": "sv.edu.aprendeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH9YwYI-Jknf3GZx_q3RJy8WkPsnk9mrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
