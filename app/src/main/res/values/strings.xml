@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">AprendeApp</string>
+    <string name="welcome_message">¡Bienvenido a AprendeApp!</string>
+
+    <string name="login_titulo">Iniciar sesión</string>
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirmar">Confirmar contraseña</string>
+    <string name="btn_login">Entrar</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="link_registro">¿No tienes cuenta? Regístrate</string>
+    <string name="rol_estudiante">Estudiante</string>
+    <string name="rol_docente">Docente</string>
+    <string name="err_campos">Completa todos los campos</string>
+    <string name="err_login">Credenciales incorrectas</string>
+    <string name="err_email">Correo no válido</string>
+    <string name="err_pass_no_coincide">Las contraseñas no coinciden</string>
+    <string name="registro_ok">Cuenta creada correctamente</string>
+    <string name="pw_min">• Mínimo 12 caracteres</string>
+    <string name="pw_mayus">• Al menos una mayúscula</string>
+    <string name="pw_minus">• Al menos una minúscula</string>
+    <string name="pw_num">• Al menos un número</string>
+    <string name="pw_esp">• Al menos un carácter especial (! @ # $ % ^ &amp; *)</string>
+
+    <string name="hint_buscar">Buscar por ID, título o tipo</string>
+    <string name="sin_resultados">No hay recursos para mostrar</string>
+    <string name="menu_favoritos">Favoritos</string>
+    <string name="menu_todos">Ver todos</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="fav_agregado">Agregado a favoritos</string>
+    <string name="fav_quitado">Quitado de favoritos</string>
+    <string name="calificar">Calificar</string>
+    <string name="calificar_titulo">Califica este recurso</string>
+    <string name="calificar_ok">¡Gracias por tu calificación!</string>
+    <string name="rating_promedio">%1$.1f (%2$d votos)</string>
+    <string name="sin_votos">Sin calificaciones</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirmar_eliminar_titulo">Eliminar recurso</string>
+    <string name="confirmar_eliminar_msg">¿Seguro que deseas eliminar este recurso? Esta acción no se puede deshacer.</string>
+    <string name="eliminado_ok">Recurso eliminado</string>
+    <string name="err_red">Error: %1$s</string>
+    <string name="err_abrir_enlace">No se pudo abrir el enlace</string>
+
+    <string name="agregar_recurso">Agregar recurso</string>
+    <string name="editar_recurso">Editar recurso</string>
+    <string name="hint_titulo">Título</string>
+    <string name="hint_descripcion">Descripción</string>
+    <string name="hint_enlace">Enlace (https://...)</string>
+    <string name="hint_imagen">URL de la imagen</string>
+    <string name="guardar">Guardar</string>
+    <string name="guardado_ok">Recurso guardado</string>
+    <string name="err_titulo">El título debe tener al menos 3 caracteres</string>
+    <string name="err_descripcion">La descripción debe tener al menos 10 caracteres</string>
+    <string name="err_enlace">Ingresa un enlace válido</string>
+    <string name="err_imagen">Ingresa una URL de imagen válida</string>
+    <string name="cd_imagen">Imagen del recurso</string>
+    <string name="cd_agregar">Agregar recurso</string>
+    <string name="cd_favorito">Marcar como favorito</string>
+
+    <string-array name="tipos_filtro">
+        <item>Todos</item>
+        <item>libro</item>
+        <item>video</item>
+        <item>articulo</item>
+        <item>tutorial</item>
+    </string-array>
+    <string-array name="tipos_form">
+        <item>libro</item>
+        <item>video</item>
+        <item>articulo</item>
+        <item>tutorial</item>
+    </string-array>
+    <string-array name="ordenes">
+        <item>Título A-Z</item>
+        <item>Título Z-A</item>
+    </string-array>
+</resources>
